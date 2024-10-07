@@ -21,6 +21,10 @@ body {
   border-radius: 27.5px;
 }
 
+.unit__btn {
+  background-color: #2DBE61;
+}
+
 .btn--second {
   background-color: #2DBE61;
 }
