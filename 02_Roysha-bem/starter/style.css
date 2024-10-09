@@ -31,6 +31,25 @@ img {
   line-height: 1;
 }
 
+/* footer */
+.footer {
+  padding: 32px;
+  background-color: #123D88;
+  text-align: right;
+}
+
+.footer__inner {
+  max-width: 1200px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer__copy {
+  color: #fff;
+  font-size: 15px;
+}
+
 .btn {
   display: block;
   width: 200px;
