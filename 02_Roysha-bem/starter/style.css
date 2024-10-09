@@ -72,6 +72,13 @@ img {
 
 .features__list {
   width: 46%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.features__item {
+  width: 46%;
 }
 
 .btn {
