@@ -81,6 +81,31 @@ img {
   width: 46%;
 }
 
+/* payment */
+.payment {
+  padding: 80px 0;
+  background-color: #F7FAFF;
+}
+
+.payment__inner {
+  max-width: 1200px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.payment__info {
+  width: 46%;
+}
+
+.payment__pic {
+  width: 46%;
+}
+
 .btn {
   display: block;
   width: 200px;
