@@ -50,6 +50,20 @@ img {
   font-size: 15px;
 }
 
+/* features */
+.features {
+  padding: 80px 0;
+}
+
+.features__inner {
+  max-width: 1200px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .btn {
   display: block;
   width: 200px;
