@@ -57,6 +57,11 @@ img {
   line-height: 1.3;
 }
 
+/* その要素が最後にある時だけ適応する */
+.card__title:last-child {
+  margin-bottom: 0;
+}
+
 .btn {
   display: block;
   width: 200px;
@@ -339,6 +344,7 @@ img {
 
 .asked__list {
   width: 46%;
+  margin-bottom: -45px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -346,4 +352,8 @@ img {
 
 .asked__item {
   width: 46%;
+  margin-bottom: 45px;
+  padding: 40px;
+  border: 1px solid #6C6C6F;
+  text-align: center;
 }
