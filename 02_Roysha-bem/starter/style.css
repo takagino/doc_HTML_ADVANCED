@@ -315,3 +315,35 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* asked */
+.asked {
+  padding: 80px 0;
+}
+
+.asked__inner {
+  max-width: 1200px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.asked__info {
+  width: 46%;
+}
+
+.asked__list {
+  width: 46%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.asked__item {
+  width: 46%;
+}
