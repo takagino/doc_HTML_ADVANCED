@@ -47,10 +47,23 @@ body {
   margin-right: auto;
 }
 .more__title {
+  margin-bottom: 30px;
+  padding-left: 10px;
+  border-left: 10px solid #FA6980;
   color: #202124;
   font-size: 24px;
   font-weight: bold;
   line-height: 1.2916666667;
   text-transform: uppercase;
+}
+.more__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: -60px;
+}
+.more__item {
+  width: 47.5%;
+  margin-bottom: 60px;
 }
 /*# sourceMappingURL=style.css.map */

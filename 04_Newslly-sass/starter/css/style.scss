@@ -13,6 +13,17 @@ $color-time: #BBBBBB;
   margin-right: auto;
 }
 
+@mixin title-main() {
+  margin-bottom: 30px;
+  padding-left: 10px;
+  border-left: 10px solid $color-accent;
+  color: $color-main;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: (31/24);
+  text-transform: uppercase;
+}
+
 body {
   color: $color-text;
   font-size: 14px;
@@ -57,10 +68,18 @@ body {
   }
 
   &__title {
-    color: $color-main;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: (31/24);
-    text-transform: uppercase;
+    @include title-main();
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: -60px;
+  }
+
+  &__item {
+    width: (380/800)*100%;
+    margin-bottom: 60px;
   }
 }
