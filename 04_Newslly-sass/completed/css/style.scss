@@ -78,8 +78,8 @@ img {
   }
 }
 
-/* unit */
-.unit {
+/* post */
+.post {
   &__catch {
     margin-bottom: 10px;
     color: $color-main;
@@ -154,8 +154,8 @@ img {
 
 /* INDEX
 ------------------------*/
-/* news */
-.news {
+/* more */
+.more {
   @include py();
 
   &__inner {
@@ -202,7 +202,7 @@ img {
 /* ABOUT
 ------------------------*/
 /* post */
-.post {
+.news {
   @include py();
 
   &__inner {
