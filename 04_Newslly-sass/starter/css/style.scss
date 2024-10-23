@@ -116,3 +116,25 @@ body {
     margin-bottom: 60px;
   }
 }
+
+/* trending */
+.trending {
+  padding: 60px 0;
+  background-color: $color-bg;
+
+  &__inner {
+    @include inner();
+  }
+
+  &__title {
+    @include title-main();
+  }
+
+  &__list {
+    @include flex(flex-start);
+  }
+
+  &__item {
+    width: (380/800)*100%;
+  }
+}
