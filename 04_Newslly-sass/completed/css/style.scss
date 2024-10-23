@@ -1,61 +1,47 @@
 @charset "utf-8";
 
-$color-main: #FA6980;
-$color-text: #888;
-$color-title: #202124;
+$color-text: #888888;
+$color-main: #202124;
+$color-accent: #FA6980;
 $color-bg: #F6F6F6;
-$color-accent: #bbbbbb;
+$color-time: #BBBBBB;
 
-@mixin inner($w: 800px) {
-  width: 88%;
-  max-width: $w;
+@mixin inner($mw: 800px, $w: 90%) {
+  max-width: $mw;
+  width: $w;
   margin-left: auto;
   margin-right: auto;
 }
 
-@mixin flex($a: stretch, $j: space-between) {
+@mixin flex($a: center, $j: space-between) {
   display: flex;
   flex-wrap: wrap;
   justify-content: $j;
   align-items: $a;
 }
 
-@mixin py($y: 60px) {
-  padding: $y 0;
-}
-
-@mixin title-main {
+@mixin title-main() {
   margin-bottom: 30px;
   padding-left: 10px;
-  border-left: 10px solid #FA6980;
-  color: $color-title;
+  border-left: 10px solid $color-accent;
+  color: $color-main;
   font-size: 24px;
   font-weight: bold;
   line-height: (31/24);
+  text-transform: uppercase;
 }
 
-/* BASE
-------------------------*/
 body {
   color: $color-text;
   font-size: 14px;
   font-family: Helvetica, Arial, sans-serif;
   line-height: (24/14);
   letter-spacing: 0;
-  background-color: #fff;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: bottom;
-}
-
-/* BLOCK
-------------------------*/
-/* header */
+/* header*/
 .header {
-  @include py(30px);
+  padding: 30px 0 60px;
   text-align: center;
 
   &__inner {
@@ -66,14 +52,14 @@ img {
 /* footer */
 .footer {
   padding: 100px 0 40px;
-  background-color: $color-title;
+  background-color: $color-main;
+  color: #fff;
 
   &__inner {
     @include inner();
   }
 
   &__copy {
-    color: $color-accent;
     font-size: 12px;
   }
 }
@@ -82,7 +68,7 @@ img {
 .post {
   &__category {
     margin-bottom: 10px;
-    color: $color-main;
+    color: $color-accent;
     font-size: 12px;
     font-style: oblique;
     text-transform: uppercase;
@@ -90,14 +76,15 @@ img {
 
   &__title {
     margin-bottom: 15px;
-    color: $color-title;
+    color: $color-main;
     font-size: 18px;
     font-weight: bold;
     line-height: (23/18);
 
     &--border {
+      margin-bottom: 15px;
       padding-bottom: 10px;
-      border-bottom: 1px solid #DDDDDD;
+      border-bottom: 1px solid #ddd;
     }
   }
 }
@@ -112,7 +99,7 @@ img {
 
   &__title {
     margin-bottom: 15px;
-    color: $color-title;
+    color: $color-main;
     font-size: 18px;
     font-weight: bold;
     line-height: (23/18);
@@ -123,15 +110,6 @@ img {
   }
 }
 
-/* time */
-.time {
-  margin-top: 20px;
-  padding-left: 26px;
-  color: $color-accent;
-  font-size: 12px;
-  background: url(../images/icon_time.png) no-repeat left center;
-}
-
 /* btn */
 .btn {
   display: block;
@@ -139,7 +117,7 @@ img {
   margin-top: 25px;
   margin-left: auto;
   padding: 14px;
-  background-color: $color-main;
+  background-color: $color-accent;
   color: #fff;
   font-size: 12px;
   font-weight: bold;
@@ -148,15 +126,24 @@ img {
   text-transform: uppercase;
 
   &--info {
-    background-color: $color-title;
+    background-color: $color-main;
   }
 }
 
-/* INDEX
-------------------------*/
+/* time */
+.time {
+  margin-top: 20px;
+  padding-left: 26px;
+  color: $color-time;
+  font-size: 12px;
+  background: url(../images/icon_time.png) no-repeat left center;
+}
+
+/* index.html
+---------------------------*/
 /* more */
 .more {
-  @include py();
+  padding-bottom: 60px;
 
   &__inner {
     @include inner();
@@ -167,7 +154,7 @@ img {
   }
 
   &__list {
-    @include flex();
+    @include flex(flex-start);
     margin-bottom: -60px;
   }
 
@@ -179,7 +166,7 @@ img {
 
 /* trending */
 .trending {
-  @include py();
+  padding: 60px 0;
   background-color: $color-bg;
 
   &__inner {
@@ -191,7 +178,7 @@ img {
   }
 
   &__list {
-    @include flex();
+    @include flex(flex-start);
   }
 
   &__item {
@@ -199,11 +186,10 @@ img {
   }
 }
 
-/* ABOUT
-------------------------*/
-/* post */
+/* about.html
+---------------------------*/
 .news {
-  @include py();
+  padding: 0 0 60px;
 
   &__inner {
     @include inner();
@@ -220,7 +206,7 @@ img {
 
 /* discovery */
 .discovery {
-  @include py();
+  padding: 60px 0;
   background-color: $color-bg;
 
   &__inner {
@@ -232,7 +218,7 @@ img {
   }
 
   &__list {
-    @include flex();
+    @include flex(flex-start);
   }
 
   &__item {

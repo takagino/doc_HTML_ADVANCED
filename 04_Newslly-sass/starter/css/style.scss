@@ -80,6 +80,12 @@ body {
     font-size: 18px;
     font-weight: bold;
     line-height: (23/18);
+
+    &--border {
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+    }
   }
 }
 
@@ -118,6 +124,10 @@ body {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+
+  &--info {
+    background-color: $color-main;
+  }
 }
 
 /* time */
@@ -173,5 +183,45 @@ body {
 
   &__item {
     width: (380/800)*100%;
+  }
+}
+
+/* about.html
+---------------------------*/
+.news {
+  padding: 0 0 60px;
+
+  &__inner {
+    @include inner();
+  }
+
+  &__item {
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+/* discovery */
+.discovery {
+  padding: 60px 0;
+  background-color: $color-bg;
+
+  &__inner {
+    @include inner();
+  }
+
+  &__title {
+    @include title-main();
+  }
+
+  &__list {
+    @include flex(flex-start);
+  }
+
+  &__item {
+    width: (240/800)*100%;
   }
 }
