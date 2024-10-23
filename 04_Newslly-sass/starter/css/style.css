@@ -50,6 +50,15 @@ body {
   line-height: 1.2777777778;
 }
 
+/* time */
+.time {
+  margin-top: 20px;
+  padding-left: 26px;
+  color: #BBBBBB;
+  font-size: 12px;
+  background: url(../images/icon_time.png) no-repeat left center;
+}
+
 /* index.html
 ---------------------------*/
 /* more */
