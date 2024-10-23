@@ -50,6 +50,40 @@ body {
   line-height: 1.2777777778;
 }
 
+/* card */
+.card {
+  background-color: #fff;
+}
+.card__body {
+  padding: 35px;
+}
+.card__title {
+  margin-bottom: 15px;
+  color: #202124;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.2777777778;
+}
+.card__title:last-child {
+  margin-bottom: 0;
+}
+
+/* btn */
+.btn {
+  display: block;
+  width: 160px;
+  margin-top: 25px;
+  margin-left: auto;
+  padding: 14px;
+  background-color: #FA6980;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 /* time */
 .time {
   margin-top: 20px;
