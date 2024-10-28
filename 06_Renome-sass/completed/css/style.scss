@@ -118,10 +118,31 @@ img {
 .post {
   &__pic {
     margin-bottom: 30px;
+    position: relative;
+  }
+
+  &__number {
+    @include m-flex(center, center);
+    position: absolute;
+    top: (30/380)*100%;
+    left: (30/380)*100%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $color-main;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: (18/18);
+    text-align: center;
   }
 
   &__text {
     margin-bottom: 50px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .btn {
@@ -250,5 +271,74 @@ img {
   &__desc {
     flex: 1;
     overflow-wrap: anywhere;
+  }
+}
+
+/*about.html
+------------------------------*/
+.concept {
+  padding-top: 60px;
+  text-align: center;
+
+  &__inner {
+    @include m-inner();
+  }
+
+  &__title {
+    width: fit-content;
+    margin: 0 auto 60px;
+    padding-bottom: 15px;
+    border-bottom: 4px solid $color-main;
+    font-size: 42px;
+    line-height: (60/50);
+  }
+
+  &__text {
+    max-width: 754px;
+    margin: auto;
+    font-size: 18px;
+    line-height: (36/18);
+
+    span {
+      display: inline-block;
+    }
+  }
+}
+
+.floor {
+  padding: 100px 0;
+
+  &__inner {
+    @include m-inner();
+  }
+
+  &__title {
+    @include m-title-main();
+  }
+
+  &__list {
+    margin-bottom: -80px;
+
+    @include m-query(tablet) {
+      @include m-flex(stretch);
+    }
+  }
+
+  &__item {
+    margin-bottom: 80px;
+
+    @include m-query(tablet) {
+      width: (380/1200)*100%;
+    }
+
+    img {
+      width: 100%;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+
+      @include m-query(tablet) {
+        aspect-ratio: 4/3;
+      }
+    }
   }
 }

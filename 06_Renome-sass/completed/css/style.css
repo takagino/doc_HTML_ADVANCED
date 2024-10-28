@@ -82,9 +82,31 @@ img {
 /* module */
 .post__pic {
   margin-bottom: 30px;
+  position: relative;
+}
+.post__number {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 7.8947368421%;
+  left: 7.8947368421%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #985E5B;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
 }
 .post__text {
   margin-bottom: 50px;
+}
+.post__text:last-child {
+  margin-bottom: 0;
 }
 .post .btn {
   margin-top: auto;
@@ -236,5 +258,86 @@ img {
 .information__desc {
   flex: 1;
   overflow-wrap: anywhere;
+}
+
+/*about.html
+------------------------------*/
+.concept {
+  padding-top: 60px;
+  text-align: center;
+}
+.concept__inner {
+  max-width: 1200px;
+  width: 87.5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.concept__title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 60px;
+  padding-bottom: 15px;
+  border-bottom: 4px solid #985E5B;
+  font-size: 42px;
+  line-height: 1.2;
+}
+.concept__text {
+  max-width: 754px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 2;
+}
+.concept__text span {
+  display: inline-block;
+}
+
+.floor {
+  padding: 100px 0;
+}
+.floor__inner {
+  max-width: 1200px;
+  width: 87.5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.floor__title {
+  margin-bottom: 40px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.floor__list {
+  margin-bottom: -80px;
+}
+@media screen and (min-width: 640px) {
+  .floor__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+}
+.floor__item {
+  margin-bottom: 80px;
+}
+@media screen and (min-width: 640px) {
+  .floor__item {
+    width: 31.6666666667%;
+  }
+}
+.floor__item img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (min-width: 640px) {
+  .floor__item img {
+    aspect-ratio: 4/3;
+  }
 }
 /*# sourceMappingURL=style.css.map */
