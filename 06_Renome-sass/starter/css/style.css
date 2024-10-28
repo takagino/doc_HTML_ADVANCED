@@ -1,5 +1,14 @@
 body {
+  color: #404040;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 14px;
-  font-weight: bold;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
 }
 /*# sourceMappingURL=style.css.map */

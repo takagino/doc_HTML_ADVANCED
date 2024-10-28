@@ -1,1 +1,17 @@
 @charset "utf-8";
+
+$color-text: #404040;
+
+body {
+  color: $color-text;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: (21/14);
+  letter-spacing: (100em/1000);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
