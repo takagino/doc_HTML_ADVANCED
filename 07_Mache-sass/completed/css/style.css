@@ -63,7 +63,7 @@ img {
 }
 
 .post__pic {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 .post__pic img {
   width: 100%;
@@ -77,8 +77,13 @@ img {
   }
 }
 .post__title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   margin-bottom: 20px;
-  color: #2b2b2b;
+  padding: 7px 10px;
+  background-color: #000;
+  color: #fff;
   font-size: 16px;
   font-weight: bold;
   line-height: 1.25;
@@ -211,11 +216,11 @@ img {
   }
 }
 .services__item:nth-child(odd) .post__title {
-  text-align: right;
+  margin-left: auto;
 }
 @media screen and (min-width: 640px) {
   .services__item:nth-child(odd) .post__title {
-    text-align: left;
+    margin-left: 0;
   }
 }
 

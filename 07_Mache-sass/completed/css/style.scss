@@ -105,7 +105,7 @@ img {
 
 .post {
   &__pic {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 
     img {
       width: 100%;
@@ -119,8 +119,11 @@ img {
   }
 
   &__title {
+    width: fit-content;
     margin-bottom: 20px;
-    color: $color-heading;
+    padding: 7px 10px;
+    background-color: #000;
+    color: #fff;
     font-size: 16px;
     font-weight: bold;
     line-height: (20/16);
@@ -238,10 +241,10 @@ img {
 
     &:nth-child(odd) {
       .post__title {
-        text-align: right;
+        margin-left: auto;
 
         @include m-query(tablet) {
-          text-align: left;
+          margin-left: 0;
         }
       }
     }
