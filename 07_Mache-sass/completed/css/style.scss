@@ -1,0 +1,286 @@
+@charset "utf-8";
+
+$color-text: #5a5a5a;
+$color-heading: #2b2b2b;
+$colo-main: #ED145B;
+$color-accent: #EDAA14;
+
+$breakpoints: (
+  "tablet": "screen and (min-width: 640px)",
+  "desktop": "screen and (min-width: 800px)",
+  "full": "screen and (min-width: 1200px)",
+  ) !default;
+
+@mixin m-query($breakpoint) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+@mixin m-inner($w: (560/640)*100%, $mw: 900px) {
+  width: $w;
+  max-width: $mw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin m-flex($a: center, $j: space-between) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: $j;
+  align-items: $a;
+}
+
+@mixin m-title-main() {
+  margin-bottom: 50px;
+  color: $color-heading;
+  font-size: 38px;
+  font-weight: bold;
+  line-height: (46/38
+  );
+text-align: center;
+}
+
+body {
+  color: $color-text;
+  font-size: 14px;
+  font-family: Verdana,
+    Geneva,
+    Tahoma,
+    sans-serif;
+  line-height: (24/14);
+  letter-spacing: (25em/1000);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+/*base
+-------------------------*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 0;
+  background-color: #000;
+
+  &__inner {
+    @include m-inner();
+    @include m-flex();
+  }
+}
+
+.nav {
+  &__list {
+    @include m-flex();
+  }
+
+  &__item {
+    margin-left: 30px;
+    font-weight: bold;
+
+    a {
+      color: #fff;
+    }
+
+    .nav__active {
+      color: $colo-main;
+    }
+  }
+}
+
+.footer {
+  padding: 60px 0 160px;
+  background-color: #000;
+  color: #fff;
+
+  &__inner {
+    @include m-inner();
+  }
+}
+
+.post {
+  &__pic {
+    margin-bottom: 20px;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      aspect-ratio: 16/9;
+
+      @include m-query(tablet) {
+        aspect-ratio: 4/3;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    color: $color-heading;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: (20/16);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.btn {
+  display: block;
+  width: 200px;
+  margin-top: 80px;
+  padding: 15px;
+  background-color: $colo-main;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+
+  &--info {
+    background-color: $color-accent;
+  }
+}
+
+/* index.html
+-------------------------*/
+.message {
+  padding: 250px 0 150px;
+  background: url(../images/bg_mainvisual.png) no-repeat center/cover;
+  color: #fff;
+
+  @include m-query(tablet) {
+    text-align: center;
+  }
+
+  &__inner {
+    @include m-inner();
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    font-size: 46px;
+    font-weight: bold;
+    line-height: (55/46);
+
+    span {
+      color: $colo-main;
+    }
+  }
+
+  .btn {
+    @include m-query(tablet) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+.updates {
+  padding: 80px 0;
+
+  &__inner {
+    @include m-inner();
+  }
+
+  &__list {
+    margin-bottom: -60px;
+
+    @include m-query(tablet) {
+      @include m-flex(flex-start);
+    }
+  }
+
+  &__item {
+    margin-bottom: 60px;
+
+    @include m-query(tablet) {
+      width: (260/900)*100%;
+    }
+  }
+
+  &__title {
+    @include m-title-main();
+  }
+}
+
+/* about.html
+-------------------------*/
+.services {
+  padding: 180px 0 80px;
+
+  &__inner {
+    @include m-inner();
+  }
+
+  &__title {
+    @include m-title-main();
+  }
+
+  &__list {
+    margin-bottom: -60px;
+
+    @include m-query(tablet) {
+      @include m-flex(flex-start);
+    }
+  }
+
+  &__item {
+    margin-bottom: 60px;
+
+    @include m-query(tablet) {
+      width: (420/900)*100%;
+    }
+
+    &:nth-child(odd) {
+      .post__title {
+        text-align: right;
+
+        @include m-query(tablet) {
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+.testimonials {
+  padding: 80px 0;
+  background: url(../images/bg_testimonials.png) no-repeat center/cover;
+
+  &__inner {
+    @include m-inner();
+  }
+
+  &__body {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+  }
+
+  &__title {
+    @include m-title-main();
+  }
+
+  &__pic {
+    margin-bottom: 40px;
+  }
+
+  &__voice {
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: (32/16);
+
+    span {
+      display: inline-block;
+    }
+  }
+
+  .btn {
+    margin: 40px auto 0;
+  }
+}
