@@ -49,6 +49,7 @@ img {
 -----------------------*/
 /* visual */
 .visual {
+  margin-bottom: 100px;
   padding: 400px 0 100px;
   background: url(../images/pic_main.png) no-repeat center/cover;
   color: #fff;
@@ -94,6 +95,9 @@ img {
 }
 
 /* services */
+.services {
+  margin-bottom: 100px;
+}
 @media screen and (min-width: 800px) {
   .services {
     width: 58.3333333333%;
@@ -110,6 +114,9 @@ img {
 }
 
 /* information */
+.information {
+  margin-bottom: 100px;
+}
 @media screen and (min-width: 800px) {
   .information {
     width: 33.3333333333%;

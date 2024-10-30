@@ -89,6 +89,7 @@ img {
 -----------------------*/
 /* visual */
 .visual {
+  margin-bottom: 100px;
   padding: 400px 0 100px;
   background: url(../images/pic_main.png) no-repeat center / cover;
   color: #fff;
@@ -129,6 +130,8 @@ img {
 
 /* services */
 .services {
+  margin-bottom: 100px;
+
   @include m-query(desktop) {
     width: (700/1200)*100%;
   }
@@ -140,6 +143,8 @@ img {
 
 /* information */
 .information {
+  margin-bottom: 100px;
+
   @include m-query(desktop) {
     width: (400/1200)*100%;
   }
