@@ -150,6 +150,18 @@ img {
   &__title {
     @include m-title-main();
   }
+
+  &__list {
+    @include m-query(tablet) {
+      @include m-flex();
+    }
+  }
+
+  &__item {
+    @include m-query(tablet) {
+      width: (330/700)*100%;
+    }
+  }
 }
 
 /* information */
