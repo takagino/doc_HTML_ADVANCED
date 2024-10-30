@@ -105,3 +105,28 @@ img {
     line-height: (22/18);
   }
 }
+
+/* contents */
+.contents {
+  &__inner {
+    @include m-inner();
+
+    @include m-query(desktop) {
+      @include m-flex(flex-start);
+    }
+  }
+}
+
+/* services */
+.services {
+  @include m-query(desktop) {
+    width: (700/1200)*100%;
+  }
+}
+
+/* information */
+.information {
+  @include m-query(desktop) {
+    width: (400/1200)*100%;
+  }
+}
