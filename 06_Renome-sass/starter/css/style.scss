@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 $color-text: #404040;
+$color-main: #985E5B;
 
 $breakpoints: (
   "tablet": "screen and (min-width: 640px)",
@@ -43,6 +44,35 @@ img {
   max-width: 100%;
   height: auto;
   vertical-align: bottom;
+}
+
+/* header */
+.header {
+  padding: 40px 0;
+
+  &__inner {
+    @include m-inner();
+    @include m-flex();
+  }
+}
+
+/* nav */
+.nav {
+  &__list {
+    @include m-flex();
+  }
+
+  &__item {
+    margin-left: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: (18/12);
+    text-transform: uppercase;
+  }
+
+  &__active {
+    color: $color-main;
+  }
 }
 
 /* index.html

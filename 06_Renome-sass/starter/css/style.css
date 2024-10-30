@@ -12,6 +12,39 @@ img {
   vertical-align: bottom;
 }
 
+/* header */
+.header {
+  padding: 40px 0;
+}
+.header__inner {
+  width: 90%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* nav */
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__item {
+  margin-left: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.nav__active {
+  color: #985E5B;
+}
+
 /* index.html
 -----------------------*/
 /* visual */
