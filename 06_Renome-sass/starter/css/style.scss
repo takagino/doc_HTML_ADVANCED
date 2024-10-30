@@ -145,6 +145,12 @@ img {
   text-align: center;
 }
 
+.mobile {
+  @include m-query(tablet) {
+    display: none;
+  }
+}
+
 /* index.html
 -----------------------*/
 /* visual */
@@ -266,5 +272,14 @@ img {
     font-size: 42px;
     font-weight: bold;
     line-height: (50/42);
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: (36/18);
+
+    span {
+      display: inline-block;
+    }
   }
 }
