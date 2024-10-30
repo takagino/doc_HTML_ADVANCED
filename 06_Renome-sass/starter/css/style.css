@@ -143,11 +143,15 @@ img {
 }
 @media screen and (min-width: 640px) {
   .services__list {
+    margin-bottom: -80px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: stretch;
   }
+}
+.services__item {
+  margin-bottom: 80px;
 }
 @media screen and (min-width: 640px) {
   .services__item {
@@ -177,5 +181,25 @@ img {
   font-weight: bold;
   line-height: 1.5;
   text-transform: uppercase;
+}
+.information__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 15px;
+}
+.information__term {
+  width: 92px;
+  margin-right: 30px;
+  padding: 8px 12px;
+  border-right: 2px solid;
+  border-bottom: 1px solid;
+  color: #985E5B;
+  font-weight: bold;
+  text-align: right;
+}
+.information__desc {
+  flex: 1;
 }
 /*# sourceMappingURL=style.css.map */

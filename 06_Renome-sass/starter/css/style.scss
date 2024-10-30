@@ -175,11 +175,14 @@ img {
 
   &__list {
     @include m-query(tablet) {
+      margin-bottom: -80px;
       @include m-flex(stretch);
     }
   }
 
   &__item {
+    margin-bottom: 80px;
+
     @include m-query(tablet) {
       width: (330/700)*100%;
       @include m-flex();
@@ -198,5 +201,25 @@ img {
 
   &__title {
     @include m-title-main();
+  }
+
+  &__item {
+    @include m-flex(center, flex-start);
+    margin-top: 15px;
+  }
+
+  &__term {
+    width: 92px;
+    margin-right: 30px;
+    padding: 8px 12px;
+    border-right: 2px solid;
+    border-bottom: 1px solid;
+    color: $color-main;
+    font-weight: bold;
+    text-align: right;
+  }
+
+  &__desc {
+    flex: 1;
   }
 }
