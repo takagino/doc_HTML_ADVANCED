@@ -85,6 +85,17 @@ img {
   }
 }
 
+.btn {
+  display: block;
+  width: 300px;
+  margin-top: 50px;
+  padding: 18px;
+  background-color: $color-main;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
 /* index.html
 -----------------------*/
 /* visual */
