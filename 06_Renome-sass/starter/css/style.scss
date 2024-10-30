@@ -161,6 +161,12 @@ img {
     @include m-query(tablet) {
       width: (330/700)*100%;
     }
+
+    .btn {
+      @include m-query(tablet) {
+        width: 100%;
+      }
+    }
   }
 }
 
