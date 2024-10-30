@@ -45,6 +45,10 @@ img {
   color: #985E5B;
 }
 
+.post__pic {
+  margin-bottom: 30px;
+}
+
 .btn {
   display: block;
   width: 300px;

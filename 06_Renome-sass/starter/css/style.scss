@@ -85,6 +85,12 @@ img {
   }
 }
 
+.post {
+  &__pic {
+    margin-bottom: 30px;
+  }
+}
+
 .btn {
   display: block;
   width: 300px;
