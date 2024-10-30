@@ -89,6 +89,22 @@ img {
   &__pic {
     margin-bottom: 30px;
   }
+
+  &__text {
+    margin-bottom: 50px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .btn {
+    margin-top: auto;
+
+    @include m-query(tablet) {
+      width: 100%;
+    }
+  }
 }
 
 .btn {
@@ -159,19 +175,15 @@ img {
 
   &__list {
     @include m-query(tablet) {
-      @include m-flex();
+      @include m-flex(stretch);
     }
   }
 
   &__item {
     @include m-query(tablet) {
       width: (330/700)*100%;
-    }
-
-    .btn {
-      @include m-query(tablet) {
-        width: 100%;
-      }
+      @include m-flex();
+      flex-direction: column;
     }
   }
 }

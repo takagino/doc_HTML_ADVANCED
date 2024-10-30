@@ -48,6 +48,20 @@ img {
 .post__pic {
   margin-bottom: 30px;
 }
+.post__text {
+  margin-bottom: 50px;
+}
+.post__text:last-child {
+  margin-bottom: 0;
+}
+.post .btn {
+  margin-top: auto;
+}
+@media screen and (min-width: 640px) {
+  .post .btn {
+    width: 100%;
+  }
+}
 
 .btn {
   display: block;
@@ -132,17 +146,17 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
   }
 }
 @media screen and (min-width: 640px) {
   .services__item {
     width: 47.1428571429%;
-  }
-}
-@media screen and (min-width: 640px) {
-  .services__item .btn {
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
   }
 }
 
