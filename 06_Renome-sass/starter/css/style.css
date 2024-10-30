@@ -99,11 +99,29 @@ img {
     width: 58.3333333333%;
   }
 }
+.services__title {
+  margin-bottom: 40px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
 
 /* information */
 @media screen and (min-width: 800px) {
   .information {
     width: 33.3333333333%;
   }
+}
+.information__title {
+  margin-bottom: 40px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=style.css.map */

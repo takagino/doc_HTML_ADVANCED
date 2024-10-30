@@ -29,15 +29,25 @@ $breakpoints: (
   align-items: $a;
 }
 
+@mixin m-title-main() {
+  margin-bottom: 40px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: (27/18
+  );
+text-transform: uppercase;
+}
+
 body {
   color: $color-text;
   font-family: Helvetica,
     Arial,
     sans-serif;
   font-size: 14px;
-  line-height: (21/14
-  );
-letter-spacing: (100em/1000);
+  line-height: (21/14);
+  letter-spacing: (100em/1000);
 }
 
 img {
@@ -122,11 +132,19 @@ img {
   @include m-query(desktop) {
     width: (700/1200)*100%;
   }
+
+  &__title {
+    @include m-title-main();
+  }
 }
 
 /* information */
 .information {
   @include m-query(desktop) {
     width: (400/1200)*100%;
+  }
+
+  &__title {
+    @include m-title-main();
   }
 }
